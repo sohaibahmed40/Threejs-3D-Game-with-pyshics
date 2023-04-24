@@ -33,8 +33,21 @@
     color: blanchedalmond;
     font-size: xx-large;
     top: 25%;
+    line-height: 45px;
     left: 50%;
     transform: translate(-50% , -50%);
     -webkit-transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    color: blanchedalmond;
+    position: absolute;
+    margin-left: 20px;
+    bottom: 30px;
+}
+.copyright:hover{
+    cursor: pointer;
 }

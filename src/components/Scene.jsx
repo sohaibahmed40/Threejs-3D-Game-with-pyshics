@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import * as CANNON from 'cannon';
+import img from "../assets/linkedin.webp";
 
 let gameStarted = false;
 let overhangs = []
@@ -274,6 +275,9 @@ const ThreeBoxComponent = () => {
     gameEnded = true;
     setGameEndedLocal(true)
   }
+  const onClick = () => {
+    window.open(`https://www.linkedin.com/in/sohaib-ahmad-aa6b62141/`, '_blank')
+  }
   return (
     <div className='canvasDiv'>
       {!gameStartedLocal && <div className='start'>
@@ -291,6 +295,9 @@ const ThreeBoxComponent = () => {
       </div>
       <div className='bestScore'>
         Best Score: {bestScoreLocal}       
+      </div>
+      <div className='copyright' onClick={onClick}>
+        Created By Sohaib Ahmad <span ><img style={{width:'40px'}} src={img}/></span>   
       </div>
       <canvas ref={canvasRef} />
     </div>
