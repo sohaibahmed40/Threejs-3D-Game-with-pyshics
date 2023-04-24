@@ -6,14 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "react-snap"
   },
   "dependencies": {
     "@react-three/cannon": "^6.5.0",
     "@react-three/drei": "^9.65.5",
     "cannon": "^0.6.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-snap": "^1.23.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

@@ -300,6 +300,8 @@ const ThreeBoxComponent = () => {
         Created By Sohaib Ahmad <span ><img style={{width:'40px'}} src={img}/></span>   
       </div>
       <canvas ref={canvasRef} />
+      <meta name="description" content="Welcome to Sohail's App, featuring 3D stack games and scripts by Sohail Ahmed" />
+      <meta name="keywords" content="sohaib, 3d stack game, sohaib scripts"/>
     </div>
   );
 };
