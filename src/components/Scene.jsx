@@ -274,8 +274,6 @@ const ThreeBoxComponent = () => {
     gameEnded = true;
     setGameEndedLocal(true)
   }
-
-  useEffect(() => { console.log("This is Stack Data:", stack) }, stack)
   return (
     <div className='canvasDiv'>
       {!gameStartedLocal && <div className='start'>
